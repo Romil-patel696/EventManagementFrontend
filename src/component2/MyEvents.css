@@ -1,0 +1,87 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.my-events {
+  padding: 20px;
+}
+.search-container {
+  margin-bottom: 30px;
+}
+.event-card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-sections {
+  max-height: 80vh; /* Adjust height as needed */
+  overflow-y: scroll;
+}
+
+.event-group {
+  margin-bottom: 20px;
+}
+
+.event-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust gap as needed */
+}
+
+.event-card {
+  flex: 1 1 calc(25% - 10px); /* 4 cards per row, adjust as needed */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Ensures the overall page does not scroll */
+
+/* .search-box{
+  display: flex;
+}
+.search-input{
+  width: 80vw;
+ 
+}
+.search-btn{
+  width: 20vw;
+} */
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input, .search-btn {
+  height: 35px;
+  box-sizing: border-box;
+
+}
+
+.search-input {
+  flex: 1;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px
+}
+
+.search-btn {
+  width: 15vw;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
